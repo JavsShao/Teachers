@@ -9,7 +9,7 @@ import json
 
 class ItcastJsonPipeline(object):
     def __init__(self):
-        self.file = open('teacher.json', 'wb')
+        self.file = open('teacher.json', 'w')
 
     def process_item(self, item, spider):
         content = json.dumps(dict(item), ensure_ascii=False) + '\n'
